@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://astro-resume.vercel.app/sitemap-index.xml
