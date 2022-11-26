@@ -28,6 +28,18 @@
   filter: drop-shadow(0 0 0.6rem #000);
 }
 
+@media screen and (max-width: 768px) {
+  .hero-text {
+    background-size: cover;
+    background-position: 30% 50%;
+    padding: 0 1.2rem;
+  }
+
+  .hero-text__about {
+    color: azure;
+  }
+}
+
 @keyframes gradient {
   0% {
     background-position: 0% 50%;
