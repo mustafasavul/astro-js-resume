@@ -1,10 +1,10 @@
 # Portfolio Website - Astro
+This is the clone of the project.
+https://github.com/uzzii-21/astro-portfolio 
 
 Just change `src/data/info.ts` to get your personal portfolio.
 
 ## portfolio template for Developers!
-
-![Feature Image](./public/assets/images/astro-portfolio.png)
 
 ## 🚀 Project Structure
 
