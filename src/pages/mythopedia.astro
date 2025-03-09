@@ -1,0 +1,61 @@
+---
+import Layout from "@layouts/Layout.astro";
+import MetaHead from "@components/general/MetaHead.astro";
+---
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <MetaHead
+      title={"Mythopedia Support"}
+      description={"Support page for Mythopedia app"}
+      ogImageUrl={"/assets/images/profile.png"}
+    />
+  </head>
+
+  <body>
+    <Layout>
+      <div class="container mx-auto px-4 py-8">
+        <h1 class="text-4xl font-bold mb-8">Mythopedia Support</h1>
+        
+        <p class="mb-6 dark:text-light">
+          Thank you for using Mythopedia! If you need assistance or have feedback, feel free to contact us.
+        </p>
+
+        <div class="grid md:grid-cols-2 gap-8">
+          <div class="bg-slate-100 dark:bg-dark-gray p-6 rounded-lg">
+            <h2 class="text-2xl font-semibold mb-4 dark:text-light">📧 Email Support</h2>
+            <p class="dark:text-light">
+              For any inquiries, please reach out to us at:
+              <a href="mailto:codermotivate@gmail.com" class="text-blue hover:underline">
+                codermotivate@gmail.com
+              </a>
+            </p>
+          </div>
+
+          <div class="bg-slate-100 dark:bg-dark-gray p-6 rounded-lg">
+            <h2 class="text-2xl font-semibold mb-4 dark:text-light">📖 FAQs</h2>
+            <p class="dark:text-light">
+              Visit our 
+              <a href="#" class="text-blue hover:underline">FAQ section</a> 
+              to find answers to common questions about the app.
+            </p>
+          </div>
+        </div>
+
+        <div class="mt-8 bg-slate-100 dark:bg-dark-gray p-6 rounded-lg">
+          <h2 class="text-2xl font-semibold mb-4 dark:text-light">📜 Privacy Policy</h2>
+          <p class="dark:text-light">
+            Read our 
+            <a href="#" class="text-blue hover:underline">Privacy Policy</a> 
+            to understand how we handle your data.
+          </p>
+        </div>
+
+        <p class="mt-8 text-center dark:text-light">
+          We're here to help and make your experience enjoyable!
+        </p>
+      </div>
+    </Layout>
+  </body>
+</html>
