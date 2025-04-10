@@ -1,64 +1,44 @@
 ---
 import Layout from "@layouts/Layout.astro";
-import MetaHead from "@components/general/MetaHead.astro";
+// Removed MetaHead import as it's now handled by Layout.astro
 ---
 
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <!-- Google Tag Manager -->
-    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-    })(window,document,'script','dataLayer','GTM-P67KKG64');</script>
-    <!-- End Google Tag Manager -->
-    <MetaHead
-      title={"Mythobase Support"}
-      description={"Support page for Mythobase app"}
-      ogImageUrl={"/assets/images/profile.png"}
-    />
-  </head>
+<Layout
+  title={"Mythobase Support"}
+  description={"Support page for Mythobase app"}
+  ogImageUrl={"/assets/images/profile.png"}
+>
+  <div class="container mx-auto px-4 py-8">
+    <h1 class="text-4xl font-bold mb-8">Mythobase Support</h1>
+    
+    <p class="mb-6 dark:text-light">
+      Thank you for using Mythobase! If you need assistance or have feedback, feel free to contact us.
+    </p>
 
-  <body>
-    <!-- Google Tag Manager (noscript) -->
-<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-P67KKG64"
-height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-<!-- End Google Tag Manager (noscript) -->
-    <Layout>
-      <div class="container mx-auto px-4 py-8">
-        <h1 class="text-4xl font-bold mb-8">Mythobase Support</h1>
-        
-        <p class="mb-6 dark:text-light">
-          Thank you for using Mythobase! If you need assistance or have feedback, feel free to contact us.
-        </p>
-
-        <div class="grid md:grid-cols-2 gap-8">
-          <div class="bg-slate-100 dark:bg-dark-gray p-6 rounded-lg">
-            <h2 class="text-2xl font-semibold mb-4 dark:text-light">📧 Email Support</h2>
-            <p class="dark:text-light">
-              For any inquiries, please reach out to us at:
-              <a href="mailto:codermotivate@gmail.com" class="text-blue hover:underline">
-                codermotivate@gmail.com
-              </a>
-            </p>
-          </div>
-
-        </div>
-
-        <div class="mt-8 bg-slate-100 dark:bg-dark-gray p-6 rounded-lg">
-          <h2 class="text-2xl font-semibold mb-4 dark:text-light">📜 Privacy Policy</h2>
-          <p class="dark:text-light">
-            Read our 
-            <a href="/mythobase-privacy-policy" class="text-blue hover:underline">Privacy Policy</a> 
-            to understand how we handle your data.
-          </p>
-        </div>
-
-        <p class="mt-8 text-center dark:text-light">
-          We're here to help and make your experience enjoyable!
+    <div class="grid md:grid-cols-2 gap-8">
+      <div class="bg-slate-100 dark:bg-dark-gray p-6 rounded-lg">
+        <h2 class="text-2xl font-semibold mb-4 dark:text-light">📧 Email Support</h2>
+        <p class="dark:text-light">
+          For any inquiries, please reach out to us at:
+          <a href="mailto:codermotivate@gmail.com" class="text-blue hover:underline">
+            codermotivate@gmail.com
+          </a>
         </p>
       </div>
-    </Layout>
-  </body>
-</html>
+
+    </div>
+
+    <div class="mt-8 bg-slate-100 dark:bg-dark-gray p-6 rounded-lg">
+      <h2 class="text-2xl font-semibold mb-4 dark:text-light">📜 Privacy Policy</h2>
+      <p class="dark:text-light">
+        Read our 
+        <a href="/mythobase-privacy-policy" class="text-blue hover:underline">Privacy Policy</a> 
+        to understand how we handle your data.
+      </p>
+    </div>
+
+    <p class="mt-8 text-center dark:text-light">
+      We're here to help and make your experience enjoyable!
+    </p>
+  </div>
+</Layout>
