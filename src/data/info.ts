@@ -12,7 +12,7 @@ export const info = {
       location: "Istanbul",
       startDate: "2025",
       endDate: "Current",
-      description: ["✓ React.js", "✓ Typescript", "✓ State Management", ".Net", "BFF", "✓ Performance Improvements", "✓  SEO & Web-vitals Improvements",  "✓ Code Optimization", "✓ Storefront", "✓ CI/CD Process"]
+      description: ["✓ React.js", "✓ Typescript", "✓ State Management", "✓ .Net", "✓ BFF", "✓ Performance Improvements", "✓  SEO & Web-vitals Improvements", "✓ Code Optimization", "✓ Storefront", "✓ CI/CD Process"]
     },
     {
       name: "DGPays",
@@ -88,21 +88,21 @@ export const info = {
     {
       title: "LCWaikiki",
       isFeatured: true,
-      thumbnail: "/assets/images/lcwaikiki.png",
+      thumbnail: "/assets/images/lcw.jpg",
       githubUrl: "",
       liveUrl: "https://www.lcwaikiki.com/",
     },
     {
       title: "DGPays",
       isFeatured: true,
-      thumbnail: "/assets/images/dgpays.png",
+      thumbnail: "/assets/images/dgpays.jpg",
       githubUrl: "",
       liveUrl: "https://www.dgpays.com/",
     },
     {
       title: "Hepsiburada",
       isFeatured: true,
-      thumbnail: "/assets/images/hepsiburada.png",
+      thumbnail: "/assets/images/hepsiburada.jpg",
       githubUrl: "",
       liveUrl: "https://www.hepsiburada.com/",
     },
