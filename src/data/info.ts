@@ -8,6 +8,20 @@ export const info = {
 
   experience: [
     {
+      name: "LCWaikiki",
+      location: "Istanbul",
+      startDate: "2025",
+      endDate: "Current",
+      description: ["✓ React.js", "✓ Typescript", "✓ State Management", ".Net", "BFF", "✓ Performance Improvements", "✓  SEO & Web-vitals Improvements",  "✓ Code Optimization", "✓ Storefront", "✓ CI/CD Process"]
+    },
+    {
+      name: "DGPays",
+      location: "Istanbul",
+      startDate: "2023",
+      endDate: "2025",
+      description: ["✓ Micro Front - End", "✓ Performance Improvements", "✓ Code Optimization", "✓ Unit Testing", "✓ CI / CD", "✓ Code Automation Tools, React.js, Typescript,Storybook, Jest, React Testing Library, React Query, React Router, React Hook Form"]
+    },
+    {
       name: "Hepsiburada (NASDAQ: HEPS)",
       location: "Istanbul",
       startDate: "2022",
@@ -71,6 +85,27 @@ export const info = {
   },
 
   projects: [
+    {
+      title: "LCWaikiki",
+      isFeatured: true,
+      thumbnail: "/assets/images/lcwaikiki.png",
+      githubUrl: "",
+      liveUrl: "https://www.lcwaikiki.com/",
+    },
+    {
+      title: "DGPays",
+      isFeatured: true,
+      thumbnail: "/assets/images/dgpays.png",
+      githubUrl: "",
+      liveUrl: "https://www.dgpays.com/",
+    },
+    {
+      title: "Hepsiburada",
+      isFeatured: true,
+      thumbnail: "/assets/images/hepsiburada.png",
+      githubUrl: "",
+      liveUrl: "https://www.hepsiburada.com/",
+    },
     {
       title: "Crowdsol Event Service",
       isFeatured: true,
