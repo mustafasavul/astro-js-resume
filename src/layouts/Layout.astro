@@ -2,6 +2,7 @@
 import Footer from "@components/general/Footer.astro";
 import Navbar from "@components/general/Navbar.astro";
 import MetaHead from "@components/general/MetaHead.astro";
+import Schema from "@components/general/Schema.astro";
 
 import "../styles/style.css";
 
@@ -49,6 +50,7 @@ const { title, description, ogImageUrl } = Astro.props;
   </script>
   
   <MetaHead title={title} description={description} ogImageUrl={ogImageUrl} />
+  <Schema title={title} description={description} />
 </head>
 <body>
   <!-- Google Tag Manager (noscript) -->

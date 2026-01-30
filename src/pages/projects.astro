@@ -6,6 +6,7 @@ import MetaHead from "@components/general/MetaHead.astro";
 import Layout from "@layouts/Layout.astro";
 
 const Projects = info.projects.map((project) => project);
+const vibeCodingProjects = info.vibeCodingProjects.map((project) => project);
 ---
 
 <!DOCTYPE html>
@@ -22,6 +23,9 @@ const Projects = info.projects.map((project) => project);
     <Layout>
       <h1 style="line-height: 1.2;">Projects</h1>
       <ProjectsWrapper projects={Projects} />
+
+      <h2 class="w-[15rem] dark:text-light mt-16">Vibe Coding Projects</h2>
+      <ProjectsWrapper projects={vibeCodingProjects} />
     </Layout>
   </body>
 </html>

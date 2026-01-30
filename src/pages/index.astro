@@ -9,6 +9,10 @@ import ProjectsWrapper from "@components/general/ProjectsWrapper.astro";
 const featureProjects = info.projects
   .filter((project) => project.isFeatured)
   .slice(0, 6);
+
+const vibeProjects = info.vibeCodingProjects
+  .filter((project) => project.isFeatured)
+  .slice(0, 6);
 ---
 
 <Layout 
@@ -22,5 +26,10 @@ const featureProjects = info.projects
   <section>
     <h2 class="w-[15rem] dark:text-light mt-16">FEATURE PROJECTS</h2>
     <ProjectsWrapper projects={featureProjects} />
+  </section>
+
+  <section>
+    <h2 class="w-[15rem] dark:text-light mt-16">VIBE CODING PROJECTS</h2>
+    <ProjectsWrapper projects={vibeProjects} />
   </section>
 </Layout>

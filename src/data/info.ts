@@ -135,4 +135,38 @@ export const info = {
       liveUrl: "https://www.linkedin.com/in/mustafasavul/",
     },
   ],
+
+  vibeCodingProjects: [
+    {
+      title: "Mythobase Discover Mythology App (iOS)",
+      isFeatured: true,
+      thumbnail: "/assets/images/vibes/mythobase.png",
+      liveUrl: "https://apps.apple.com/tr/app/mythobase-discover-mythology/id6743084078?l=tr",
+    },
+    {
+      title: "Hardware Wizard",
+      isFeatured: true,
+      thumbnail: "/assets/images/vibes/hardware-wizard.png",
+      liveUrl: "https://hd-wizard.vercel.app/",
+    },
+    {
+      title: "Crowdsoul",
+      isFeatured: true,
+      thumbnail: "/assets/images/vibes/crowdsoul.png",
+      liveUrl: "https://crowdsoul.netlify.app/",
+    },
+    {
+      title: "Tree Calendar",
+      isFeatured: true,
+      thumbnail: "/assets/images/vibes/tree-calendar.png",
+      githubUrl: "https://github.com/mustafasavul/tree-calendar-three-js",
+      liveUrl: "https://tree-calendars.netlify.app/",
+    },
+    {
+      title: "Upscale",
+      isFeatured: true,
+      thumbnail: "/assets/images/vibes/upscale.png",
+      liveUrl: "https://upscalingtechs.netlify.app/",
+    },
+  ],
 };

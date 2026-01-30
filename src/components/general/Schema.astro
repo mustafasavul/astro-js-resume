@@ -1,0 +1,45 @@
+---
+import { info } from "@data";
+
+interface Props {
+  title?: string;
+  description?: string;
+}
+
+const { title, description } = Astro.props;
+
+const personSchema = {
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": info.name,
+  "jobTitle": info.jobDescription,
+  "description": info.about,
+  "url": info.baseUrl,
+  "sameAs": [
+    info.socialMedia.twitter,
+    info.socialMedia.github,
+    info.socialMedia.linkedin
+  ].filter(Boolean)
+};
+
+const websiteSchema = {
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": `${info.name} - Portfolio`,
+  "url": info.baseUrl,
+};
+
+const webpageSchema = {
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  "name": title || info.name,
+  "description": description || info.about,
+  "url": `${info.baseUrl}${Astro.url.pathname}`,
+};
+
+const schemas = [personSchema, websiteSchema, webpageSchema];
+---
+
+{schemas.map((schema) => (
+  <script type="application/ld+json" set:html={JSON.stringify(schema)} />
+))}
